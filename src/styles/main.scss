@@ -1,0 +1,136 @@
+@import 'variables';
+
+%font-main {
+  font-family: $jedi-font-main;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+%font-monospaced {
+  font-family: $jedi-font-monospaced;
+  font-weight: 500;
+}
+
+%tree-background {
+  background-image: $jedi-sprite-light;
+    background-color: transparent;
+    &.dark {
+      background-image: $jedi-sprite-light;
+    }
+}
+
+.Jedi {
+  display: flex;
+  @extend %font-main;
+  text-align: left;
+  line-height: 24px;
+  @extend %tree-background;
+  &:not(:last-child()) {
+    background-repeat: repeat-y;
+    background-position: -99px 0px;
+  }
+
+  &:last-child(){
+    background-repeat: no-repeat;
+    background-position: -99px -96px;
+  }
+
+  .toggler {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: -66px 0px;
+  }
+
+  &:not(.loading) .toggler {
+    @extend %tree-background;
+  }
+
+  &.colapsed {
+    display: none;
+  }
+
+  .json-content {
+    display: flex;
+    box-sizing: padding-box;
+    padding: 1px 5px;
+    width: 100%;
+    .title {
+      font-weight: 500;
+    }
+  }
+
+  &.branch {
+    .toggler.branch {
+      &.colapse {
+        background-position: 0px 0px;
+      }
+      &.expand {
+        background-position: -33px 0px;
+      }
+    }
+    .json-content {
+      flex-direction: column;
+
+      .title {
+        display: flex;
+        flex-direction: row;
+        span {
+          @extend %font-monospaced;
+          margin-left: 5px;
+          color: $jedi-color-primary;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  &.leaf {
+    .json-content {
+      flex-direction: row;
+      border-radius: 4px;
+
+      .title {
+
+        &:after {
+          content: ": ";
+          margin-right: 5px;
+        }
+      }
+
+      .data {
+        display: flex;
+        flex: 1;
+        input {
+          font-family: 'Roboto';
+          border: 0;
+          outline: 0;
+          padding: 0;
+          font-size: 14px;
+          background: transparent;
+          width: 100%;
+        }
+        .boolean {
+          user-select: none;
+          cursor: pointer;
+        }
+      }
+
+      &:hover {
+        border: solid 1px rgba(255, 255, 255, .2);
+        padding: 0 4px;
+      }
+
+      &.editor {
+        background: transparentize($jedi-color-primary, .8);
+        border: solid 1px $jedi-color-primary;
+        padding: 0 4px;
+      }
+    }
+  }
+  &__line {
+    stroke: $jedi-color-primary;
+  }
+}
