@@ -1,6 +1,6 @@
 # @jporto/vue-jedi
 
-![logo](/src/assets/logo64.png)
+![logo](https://gitlab.com/porto/vue-jedi/raw/master/src/assets/logo64.png)
 
 [![build status](https://img.shields.io/gitlab/pipeline/porto/vue-jedi/master.svg)](https://gitlab.com/porto/vue-jedi.git)
 [![npm-publish](https://img.shields.io/npm/dm/@jporto/vue-jedi.svg)](https://www.npmjs.com/package/@jporto/vue-jedi)
