@@ -19,8 +19,8 @@
     "styleguide": "vue-cli-service styleguidist",
     "styleguide:build": "vue-cli-service styleguidist:build && node-sass ./src/styles/main.scss -o ./styleguide/build/ && replace '</head>' '<link rel=\"stylesheet\" type=\"text/css\" href=\"build/main.css\"></head>' ./styleguide/index.html && node replace.js && rimraf ./styleguide/build"
   },
-  "main": "dist/@jporto/vue-flex-layout.common.js",
-  "unpkg": "dist/@jporto/vue-flex-layout.umd.min.js",
+  "main": "dist/@jporto/vue-jedi.common.js",
+  "unpkg": "dist/@jporto/vue-jedi.umd.min.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
@@ -78,14 +78,11 @@
     }
   },
   "keywords": [
-    "flex",
-    "flexbox",
     "vuejs",
     "nuxt",
-    "resize",
-    "resizable",
-    "fluid",
-    "responsive"
+    "json",
+    "editor",
+    "tree"
   ],
   "license": "MIT",
   "publishConfig": {
