@@ -1,6 +1,6 @@
 # @jporto/vue-jedi
 
-![logo](/src/assets/logo64.png)
+![logo](https://gitlab.com/porto/vue-jedi/raw/master/src/assets/logo64.png)
 
 [![build status](https://img.shields.io/gitlab/pipeline/porto/vue-jedi/master.svg)](https://gitlab.com/porto/vue-jedi.git)
 [![npm-publish](https://img.shields.io/npm/dm/@jporto/vue-jedi.svg)](https://www.npmjs.com/package/@jporto/vue-jedi)
@@ -11,7 +11,9 @@ A VueJS JSON editor component
 
 Checkout the [Demo](https://porto.gitlab.io/vue-jedi/) which contains the component documentation.
 
-Also, please [verify my project](https://bio.torre.co/joseporto/projects?id=LMggxJME&view=verify) at torre.co.
+> If you enjoy this component, feel free to drop me feedback, either via the repository, or via joseporto@icloud.com.
+
+> Also, please [verify my project](https://bio.torre.co/joseporto/projects?id=LMggxJME&view=verify) at torre.co.
 
 ## Instalation
 
