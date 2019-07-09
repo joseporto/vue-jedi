@@ -11,6 +11,8 @@ A VueJS JSON editor component
 
 Checkout the [Demo](https://porto.gitlab.io/vue-jedi/) which contains the component documentation.
 
+Also, please [verify my project](https://bio.torre.co/joseporto/projects?id=LMggxJME&view=verify) at torre.co.
+
 ## Instalation
 
 ```bash
